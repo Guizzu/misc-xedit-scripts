@@ -18,7 +18,7 @@ begin
   flagsElement := ElementByPath(e, 'BOD2\First Person Flags\39 - Shield');
   
   if Assigned(flagsElement) and (GetEditValue(flagsElement) = '1') then begin
-  AddMasterIfMissing(GetFile(e), 'Update.esm');
+    AddMasterIfMissing(GetFile(e), 'Update.esm');
     armorType := GetElementEditValues(e, 'BOD2\Armor Type');
     
     if armorType = 'Heavy Armor' then
